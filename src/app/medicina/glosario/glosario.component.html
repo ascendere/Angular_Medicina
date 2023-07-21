@@ -1,0 +1,48 @@
+<!-- HEADER -->
+<app-medicina-header></app-medicina-header>
+
+<div class="linea text-center" id="cont">
+  <h1 class="texto">GLOSARIO</h1>
+</div>
+
+<div class="d-flex justify-content-end">
+  <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" [(ngModel)]="searchText" (ngModelChange)="onSearchChange()" type="search"
+      placeholder="Buscar" aria-label="Buscar">
+  </form>
+</div>
+<div class="d-flex justify-content-center align-items-center carousel">
+  <carousel [isAnimated]="false" [interval]="0" [activeSlide]="obtenerIndiceSlide()">
+    <slide *ngFor="let letra of glosario | keyvalue">
+      <div class="carousel-caption">
+        <ul class="letras-lista">
+          <div class="d-flex justify-content-center">
+
+            <p [class.active]="letra.key === seleccionActual" (click)="seleccionarLetra(letra.key)">
+
+            </p>
+          </div>
+
+        </ul>
+      </div>
+      <div class="carousel-body" id="letra">
+        {{ letra.key }}
+      </div>
+    </slide>
+  </carousel>
+</div>
+
+<div class="informacion-letra">
+  <h2>Información sobre la letra {{ seleccionActual }}</h2>
+  <ul>
+    <li *ngFor="let palabra of glosario[seleccionActual]">{{ palabra }}</li>
+  </ul>
+</div>
+
+<i class="fas fa-chevron-left flecha-izquierda" (click)="cambiarLetraAnterior()"></i>
+
+<i class="fas fa-chevron-right flecha-derecha" (click)="cambiarLetraSiguiente()"></i>
+
+
+<!-- FOOTER -->
+<app-medicina-footer></app-medicina-footer>

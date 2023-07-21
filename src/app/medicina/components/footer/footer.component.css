@@ -1,0 +1,24 @@
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item svg {
+  margin-right: 10px;
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-link i {
+  margin-left: 5px;
+}
+
+@media (max-width: 767px) {
+  .row-cols-md-5 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
