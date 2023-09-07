@@ -14,6 +14,9 @@ import { Cont1Component } from './cont1/cont1.component';
 import { AppRoutingModule } from '../app-routing.module';
 
 import { FormsModule } from '@angular/forms';
+import { Cont2Component } from './cont2/cont2.component';
+import { VideoComponent } from './video/video.component';
+import { FotoComponent } from './foto/foto.component';
 
 
 @NgModule({
@@ -26,7 +29,10 @@ import { FormsModule } from '@angular/forms';
     ContenidoComponent,
     ContComponent,
     GlosarioComponent,
-    Cont1Component
+    Cont1Component,
+    Cont2Component,
+    VideoComponent,
+    FotoComponent
   ],
   exports:[
     MainPageComponent
