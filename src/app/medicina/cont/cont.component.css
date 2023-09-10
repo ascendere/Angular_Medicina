@@ -53,3 +53,12 @@
   height: 2px;  /* Esta es la altura de la línea, puedes ajustarla a tus necesidades */
   background-color: yellow;  /* Este es el color de la línea */
 }
+
+.vertical-line {
+  width: 2px; /* Ancho de la línea vertical */
+  height: 100%; /* Altura igual a la tarjeta */
+  background: #FFD342; /* Color de fondo */
+  position: absolute;
+  left: 120%; /* Posición en el centro horizontal de la tarjeta */
+  transform: translateX(-50%); /* Centra la línea vertical */
+}

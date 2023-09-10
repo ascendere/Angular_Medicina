@@ -11,7 +11,7 @@ interface Glosario {
 })
 export class GlosarioComponent {
   glosario: Glosario = {
-    'A': ['Abdomen', 'Axila', 'Anatomía'],
+    'A': ['Abdomen', 'Antebrazo','Articulaciones','Axila', 'Anatomía'],
     'B': ['Brazo', 'Boca', 'Biología'],
     'C': ['Cabeza', 'Cuello', 'Corazón'],
     // Agrega más letras y palabras según tu glosario

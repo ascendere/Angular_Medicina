@@ -1,0 +1,34 @@
+.pizarra-container {
+    display: flex;
+    background-color: #e6e6e6;
+    height: 100vh;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+  }
+  
+  .menu-flotante {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 15px; /* Agregamos bordes redondeados */
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .opcion {
+    margin: 10px;
+    border-radius: 50%; /* Hacemos los íconos redondos */
+    padding: 10px;
+    background-color: #f0f0f0; /* Color de fondo de las opciones */
+  }
+  
+  .pizarra {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+  }
+  
+  /* Estilos adicionales */
+  

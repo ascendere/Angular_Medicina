@@ -1,4 +1,4 @@
-#cont {
+#glosario {
   background-color: #21B2C5;
   border-left: 2px solid black;
   border-right: 2px solid rgb(75, 65, 65);
@@ -6,57 +6,78 @@
 }
 
 
-.carousel{
-  background-color: #BFE3E2;
+.form-control {
+  border-radius: 63px;
+  margin-top: 20px; /* Añade espacio sobre del elemento */
+  background: #FDFDFD;
+  padding-left: 10%;
+  margin-bottom: 20px; /* Añade espacio debajo del elemento */
+
 }
 
-.carousel-body{
-  margin-top: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
+.input-with-icon {
+  position: relative;
+  margin-right: 20%;
+}
+
+.search-icon {
+  position: absolute;
+  /* Ajusta el valor según la posición vertical deseada */
+  left: 10%;
+  /* Ajusta el valor según la posición horizontal deseada */
+  transform: translateY(50%);
+  width: 25.833px;
+  height: 24.314px;
+  margin-right: 10%;
+  
+}
+
+/* Ajusta la alineación vertical y horizontal del contenido del campo de entrada */
+.form-control {
+  text-align: center; /* Centra horizontalmente el contenido */
+  padding-top: 10px; /* Ajusta el espaciado superior según sea necesario */
+}
+
+
+
+.carousel {
+  background-color: #BFE3E2;
+
+}
+
+.carousel-content {
+  display: flex;
+  width: 1440px;
+  height: 163px;
+  padding: 22px 540px;
+  justify-content: center;
+  align-items: center;
+  gap: 57px;
+  flex-shrink: 0;
+  background: rgba(0, 143, 140, 0.25);
+
 }
 
 .flecha-izquierda,
 .flecha-derecha {
   font-size: 24px;
   color: black;
-  margin-bottom: 50px;
+  margin-bottom: 120px;
   cursor: pointer;
 }
 
-.flecha-derecha{
+
+
+.flecha-derecha {
   margin-left: 5.4rem;
 }
 
-.flecha-izquierda{
+.flecha-izquierda {
   margin-right: 8rem;
 }
 
 
-#letra{
+#letra {
   color: #21B2C5;
   font-size: 10rem;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  font-size: 100rem; /* Aumentar el tamaño de fuente de las flechas */
-  margin-top: -20px; /* Ajustar la distancia entre las flechas y el contenido */
-}
-
-.carousel-body {
-  margin-top: 20px; /* Ajustar la distancia entre el contenido y las flechas */
-}
-.carousel-control-next {
-  right: -30px;
-}
-
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  display: inline-block;
-  width: 2rem;
-  height: 2rem;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: 1000% 1000%;
-  color: black;
 }

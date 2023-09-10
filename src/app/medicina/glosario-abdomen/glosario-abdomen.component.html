@@ -1,0 +1,54 @@
+<!-- HEADER -->
+<app-medicina-header></app-medicina-header>
+
+<div class="linea text-center" id="glosAbd">
+  <h1 class="texto">GLOSARIO</h1>
+</div>
+
+<div class="d-flex justify-content-end">
+  <form class="form-inline my-2 my-lg-0">
+    <div class="input-with-icon">
+      <img src="./assets/lupa.png" alt="Icono de búsqueda" class="search-icon">
+      <input class="form-control mr-sm-2" [(ngModel)]="searchText" (ngModelChange)="onSearchChange()" type="search"
+        placeholder="Buscar" aria-label="Search anything....">
+    </div>
+  </form>
+</div>
+
+
+<div class="d-flex justify-content-center align-items-center custom-carousel">
+  <!-- Tu carrusel personalizado -->
+  <div class="carousel-content">
+    <div class="carousel-caption">
+      <ul class="letras-lista">
+        
+        <div class="d-flex justify-content-center">
+          <!-- Flecha a la izquierda -->
+          <i class="fas fa-chevron-left flecha-izquierda" (click)="cambiarLetraAnterior()"></i>
+          <!-- Flecha a la derecha -->
+          <i class="fas fa-chevron-right flecha-derecha" (click)="cambiarLetraSiguiente()"></i>
+        </div>
+      </ul>
+    </div>
+    <div class="carousel-body" id="letra">
+        
+      {{ seleccionActual }}
+    </div>
+  </div>
+</div>
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Coloca aquí tu imagen -->
+        <img class="img" src="./assets/abd.png" alt="Abdomen">
+      </div>
+      <div class="col-md-6">
+        <!-- Descripción del abdomen -->
+        <h2>Abdomen</h2>
+        <p>El abdomen es la región del cuerpo humano que se encuentra entre el tórax y la pelvis. Está delimitado por encima por el diafragma, que separa el tórax del abdomen, y por debajo por la pelvis. Esta área contiene varios órganos vitales, como el estómago, el hígado, el páncreas, los intestinos, el bazo y los riñones.</p>
+      </div>
+    </div>
+  </div>
+<!-- FOOTER -->
+<app-medicina-footer></app-medicina-footer>

@@ -10,13 +10,17 @@ import { IntroComponent } from './components/intro/intro.component';
 import { ContenidoComponent } from './components/contenido/contenido.component';
 import { ContComponent } from './cont/cont.component';
 import { GlosarioComponent } from './glosario/glosario.component';
-import { Cont1Component } from './cont1/cont1.component';
+import { Contenido2Component } from './contenido2/contenido2.component';
 import { AppRoutingModule } from '../app-routing.module';
 
 import { FormsModule } from '@angular/forms';
 import { Cont2Component } from './cont2/cont2.component';
 import { VideoComponent } from './video/video.component';
 import { FotoComponent } from './foto/foto.component';
+import { GlosarioAbdomenComponent } from './glosario-abdomen/glosario-abdomen.component';
+import { GlosarioBrazoComponent } from './glosario-brazo/glosario-brazo.component';
+import { PizarraComponent } from './pizarra/pizarra.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -29,10 +33,15 @@ import { FotoComponent } from './foto/foto.component';
     ContenidoComponent,
     ContComponent,
     GlosarioComponent,
-    Cont1Component,
+    Contenido2Component,
     Cont2Component,
     VideoComponent,
-    FotoComponent
+    FotoComponent,
+    Contenido2Component,
+    GlosarioAbdomenComponent,
+    GlosarioBrazoComponent,
+    PizarraComponent,
+    LoginComponent
   ],
   exports:[
     MainPageComponent

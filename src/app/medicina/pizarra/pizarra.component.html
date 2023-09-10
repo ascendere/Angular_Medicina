@@ -1,0 +1,31 @@
+<app-medicina-header></app-medicina-header>
+<div class="pizarra-container " id="pizarra">
+  <div class="menu-flotante">
+    <!-- Opciones del menú flotante -->
+    <div class="opcion">
+      <button (click)="abrirDialogoImagen()">
+        <img src="assets/radix-icons_video.svg" alt="Opción 1">
+      </button>
+
+    </div>
+    <div class="opcion">
+      <img src="assets/Group.svg" alt="Opción 2">
+    </div>
+    <div class="opcion">
+      <img src="assets/Group (1).svg" alt="Opción 2">
+    </div>
+    <div class="opcion">
+      <img src="assets/mdi_drawing.svg" alt="Opción 2">
+    </div>
+    <div class="opcion">
+      <img src="assets/solar_bones-broken.svg" alt="Opción 2">
+    </div>
+    <!-- Agrega más opciones según sea necesario -->
+  </div>
+  <div class="pizarra">
+    <img *ngIf="imagenUrl" [src]="imagenUrl" alt="Imagen">
+  </div>
+</div>
+
+<app-medicina-footer></app-medicina-footer>
+
